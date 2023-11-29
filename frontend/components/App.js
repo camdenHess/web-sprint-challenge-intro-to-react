@@ -10,6 +10,7 @@ let resB = axios.get(urlPlanets)
 function App() {
   // ❗ Create state to hold the data from the API
   // ❗ Create effects to fetch the data and put it in state
+  //Comment
 
   const [character, setCharacter] = useState([])
 
