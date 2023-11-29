@@ -6,12 +6,6 @@ function Character(props) { // ❗ Add the props
   const {name, planet} = props
   const [showPlanet, setShowPlanet] = useState(false)
 
-  useEffect(() => {
-    const showPlanetListener = () => {
-      setShowPlanet()
-    }
-  },[])
-
   return (
     <div className={'character-card'}>
       {/* Use the same markup with the same attributes as in the mock */}
