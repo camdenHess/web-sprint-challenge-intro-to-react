@@ -7,13 +7,13 @@ function Character(props) { // ❗ Add the props
   const [showPlanet, setShowPlanet] = useState(false)
 
   return (
-    <div className={'character-card'}>
+    <div className={'character-card'} onClick={() => setShowPlanet(!showPlanet)}>
       {/* Use the same markup with the same attributes as in the mock */}
-      <h3 className={'character-name'} onClick={() => setShowPlanet(!showPlanet)}>{name}</h3>
+      <h3 className={'character-name'}>{name}</h3>
       {showPlanet && 
       <p>
-        Planet:
-        <span className={'character-planet'}> {planet}</span>
+        {"Planet: "}
+        <span className={'character-planet'}>{planet}</span>
       </p>}
     </div>
   )
